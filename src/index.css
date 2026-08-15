@@ -1,5 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Public+Sans:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
+
+@theme {
+  /* background + text neutrals */
+  --color-cream: #faf5e7;
+  --color-ink: #1c2333;
+  --color-body: #565b72;
+
+  /* pulled from the seal: PH flag blue/red + antique gold ring */
+  --color-ph-blue: #0038a8;
+  --color-ph-red: #ce1126;
+  --color-gold: #c9a227;
+  --color-gold-soft: #f1dfa8;
+
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-body: "Public Sans", ui-sans-serif, system-ui, sans-serif;
+}
 
 body {
   margin: 0;
+  background-color: var(--color-cream);
+  color: var(--color-body);
+  font-family: var(--font-body);
 }
